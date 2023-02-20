@@ -10,17 +10,17 @@ namespace RocketLaunches
             string keyword = Console.ReadLine();
 
             var httpClient = new HttpClient();
-            var response = await httpClient.GetAsync($"https://ll.thespacedevs.com/2.2.0/launch/?mode=list&search={keyword}");
+            var response = await httpClient.GetAsync("https://ll.thespacedevs.com/2.2.0/launch/?mode=list&search=" + keyword);
             var responseContent = await response.Content.ReadAsStringAsync();
 
             var launches = JsonSerializer.Deserialize<Launches>(responseContent);
 
-            if (launches.Count > 0)
+            if (launches.count > 0)
             {
                 Console.WriteLine();
-                foreach (var launch in launches.Results)
+                foreach (var launch in launches.results)
                 {
-                    Console.WriteLine($"{launch.Name} - {launch.Net}");
+                    Console.WriteLine($"{launch.name} - {launch.net}");
                 }
             }
             else
@@ -32,13 +32,13 @@ namespace RocketLaunches
 
     public class Launch
     {
-        public string? Name { get; set; }
-        public string? Net { get; set; }
+        public string? name { get; set; }
+        public string? net { get; set; }
     }
 
     public class Launches
     {
-        public int Count { get; set; }
-        public Launch[]? Results { get; set; }
+        public int count { get; set; }
+        public Launch[]? results { get; set; }
     }
 }
