@@ -3,7 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebProgLab1", "WebProgLab1.csproj", "{BEC091C7-DCE8-497A-A645-03CAE9BDCE03}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebProgLab1", "WebProgLab1.csproj", "{BEC091C7-DCE8-497A-A645-03CAE9BDCE03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebProgLab2", "WebProgLab2", "{BFD1A7B9-D09D-4E16-A6D4-EB5F57661EDF}"
+	ProjectSection(SolutionItems) = preProject
+		1680x1260_palm_branches_leaves_sky_plant.jpg = 1680x1260_palm_branches_leaves_sky_plant.jpg
+		HTMLPage1.html = HTMLPage1.html
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
