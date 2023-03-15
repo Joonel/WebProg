@@ -1,0 +1,50 @@
+﻿body
+{
+    margin-left: 30px;
+}
+
+input[type="number"] {
+    text-align: center;
+    font-size: 117%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 32px;
+    height: 20px;
+    border: solid black;
+    border-width: 3px;
+    padding: 10px;
+    margin: 0px;
+    -moz-appearance: textfield; /* Firefox */
+    appearance: textfield; /* Chrome and Safari */
+}
+    input[type="number"]::-webkit-outer-spin-button,
+    input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    input[type="number"]:focus {
+        background-color: lightcyan;
+    }
+
+button {
+    margin-top: 18px;
+    height: 50px;
+    width: 118px;
+    border: 3px solid black;
+    transition: border-width 0.06s ease-in-out;
+    font-size: 106%;
+}
+
+    button:hover {
+        border-width: 6px;
+    }
+
+    button:active {
+        border-width: 0px;
+    }
+
+h1 {
+    font-size: 200%;
+    font-family: "Bahnschrift";
+    font-weight: bold;
+}

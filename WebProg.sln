@@ -5,13 +5,6 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebProgLab1", "WebProgLab1.csproj", "{BEC091C7-DCE8-497A-A645-03CAE9BDCE03}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Lab2", "Lab2", "{77E0ED72-7858-4817-9AB5-A118F535970D}"
-	ProjectSection(SolutionItems) = preProject
-		Lab2\HTMLPage1.html = Lab2\HTMLPage1.html
-		Lab2\palm_branches_leaves_sky_plant.jpg = Lab2\palm_branches_leaves_sky_plant.jpg
-		Lab2\StyleSheet1.css = Lab2\StyleSheet1.css
-	EndProjectSection
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
