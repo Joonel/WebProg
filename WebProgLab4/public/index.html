@@ -1,23 +1,29 @@
 <!DOCTYPE html>
-<html lang="uk">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link href="/output.css" rel="stylesheet">
     <title>Space Launch App</title>
 </head>
 
-<body>
-    <h1>Space Launch App</h1>
-    <div class="search-container">
-        <label for="keyword">Назва ракети чи місії:</label>
-        <input type="text" id="keyword">
-        <button id="search">Шукати</button>
-    </div>
-    <div class="result-container">
-        <ul id="results"></ul>
-        <div id="error" class="hidden"></div>
+<body class="bg-gray-100">
+    <div class="container mx-auto px-4">
+        <h1 class="text-3xl font-bold text-center my-8">Space Launch App</h1>
+        <div class="search-container flex flex-col items-center mb-8">
+            <label for="keyword" class="mb-2">Назва ракети чи місії:</label>
+            <input type="text" id="keyword" class="p-2 mb-4 border border-gray-300 rounded">
+            <button id="search"
+                class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded">Пошук</button>
+        </div>
+
+        <div class="result-container w-full max-w-2xl mx-auto">
+            <div id="loading" class="hidden w-16 h-16 mx-auto border-t-2 border-blue-500 rounded-full animate-spin">
+            </div>
+            <ul id="results"></ul>
+            <div id="error" class="hidden text-red-500 font-bold"></div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
